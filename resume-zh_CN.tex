@@ -14,21 +14,30 @@
 \name{林明杰}
 
 % {E-mail}{mobilephone}{homepage}
-% be careful of _ in emaill address
-\contactInfo{(+86) 185-5008-6576}{linmingjie@foxmail.com}{集成电路设计 应用工程师}{}
+% be careful of _ in email address
+\contactInfo{(+86) 185-5008-6576}{linmingjie@foxmail.com}{系统软件总监 | MCU/SoC 系统软件架构 | 芯片验证 FPGA 原型 | 10+ 年半导体经验}{}
 % {E-mail}{mobilephone}
 % keep the last empty braces!
 %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
  
 
 \section{工作经历}
-\datedsubsection{\textbf{恩智浦半导体 | 飞思卡尔半导体} 芯片测试工程师|芯片原型验证工程师}{2014.6-2020.7}
+\datedsubsection{\textbf{恩智浦半导体（NXP） | 飞思卡尔半导体} 芯片测试工程师|芯片原型验证工程师}{2014.6-2020.7}
 \begin{itemize}
-  \item 负责芯片的硅后功能验证，验证内容包含数字IP和模拟IP, 测试环境搭建
-  \item 担任\textbf{多个芯片验证工作负责人}，负责模块分配，进度管理，结果汇总
-  \item 负责FPGA的芯片硅前验证，IP的前期测试，软件开发和ROM开发
-  \item 负责芯片硅后验证，模拟IP的参数测试，如ADC，DAC，CMP，Power等模块的参数测试
-  \item 参与芯片前端验证，芯片功能验证，协助SDK开发验证，熟悉整个芯片开发设计流程
+  \item 负责 MCU/SoC 芯片硅后（Post-Silicon）功能验证，覆盖数字 IP 与模拟 IP，搭建并维护芯片验证与测试环境
+  \item 担任多个芯片项目验证负责人，负责验证任务分解、资源协调、进度管理及验证结果汇总与问题跟踪
+  \item 参与芯片硅前（Pre-Silicon）验证工作，基于 FPGA 平台开展芯片原型验证及 IP 前期功能测试
+  \item 负责芯片硅后模拟 IP 参数测试与特性验证，包括 ADC、DAC、CMP 及电源管理模块等
+  \item 参与芯片前端验证与系统级功能验证，协助 SDK 与 ROM 软件开发及验证，熟悉完整芯片研发流程
+\end{itemize}
+\datedsubsection{\textbf{江苏云途半导体有限公司} 系统软件总监}{2020.7-至今}
+\begin{itemize}
+  \item 负责公司嵌入式系统软件整体架构设计与研发管理，深度参与 MCU 产品定义、架构设计及功能验证
+  \item 建立并持续优化系统软件开发流程，覆盖需求管理、设计评审、代码开发、集成验证及发布全流程
+  \item 组建并管理系统软件团队，开展技术指导与评审，推动团队技术能力与工程效率持续提升
+  \item 负责芯片 FPGA 验证及硅后（Post-Silicon）验证工作，支撑芯片功能、性能及稳定性验证
+  \item 支持芯片及软件功能安全开发流程，配合功能安全需求分析、设计实现与验证活动
+  \item 推动软件开发流程规范化与标准化，建立缺陷/问题追踪与闭环管理机制，提升软件质量与项目可控性
 \end{itemize}
 
 \section{项目经历}
@@ -36,10 +45,8 @@
 \begin{itemize}
   \item 该项目主要是将MCU的ASIC设计\textbf{移植到 FPGA 上实现}, 可以以在流片前期实现对数字IP和系统集成的验证，提供软件和ROM的早期开发平台，缩短ASIC的研发周期。
    \begin{itemize}
-    \item 模拟模块替换 
     \item 优化FPGA时钟资源，对ASIC时钟树进行必要对修改
-    \item RAM和Flash模型替换; 
-    \item FPGA和ASIC仿真环境做相应的修改
+    \item FPGA和ASIC仿真环境做相应的修改, 开发流程标准化制定
    \end{itemize}
   \item FPGA实现之后的板级调试, 定位FPGA原型设计中的问题，结合功能仿真和后仿真实现对FPGA原型设计中对问题定位，修复FPGA中的时序问题。
   \item 开发FPAG配套的升级脚本，提高ROM验证效率
@@ -62,10 +69,42 @@
   \item 负责实现芯片模拟参数验证，为芯片数据手册提供数据支持，基于LabVIEW和NI的测试仪器对芯片的功耗，ADC的静态参数和动态参数，DAC的参数，ACMP的模拟参数进行测试。对芯片进行高低温参数测试
    \begin{itemize}
     \item 芯片功耗测试包含芯片运行模式和低功耗模式下（高低温）的电压电流功耗测试
-    \item ADC/DAC参数测试包含有效位测试，DNL, INL, 转换速率等
-    \item ACMP测试包含迟滞阈值，传播延时等参数测试
     \item 芯片的高低温测试主要包含芯片稳定性和芯片功能缺陷复现
    \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{芯片产品定义和设计开发}}{2020.7-至今}
+\begin{itemize}
+  \item 结合市场需求，应用需求，技术趋势，竞争产品等多方面因素，制定芯片产品规划和路线图
+  \item 参与芯片需求分析，芯片架构设计，芯片模块设计和验证
+    \item 对ARM内核有较深入的理解，能够调试和分析 ARM内核相关问题
+    \item 熟悉常用外设模块的设计和验证，如UART, SPI, I2C, GPIO, ADC, DAC, PWM等
+    \item 熟练使用EDA工具进行芯片设计和验证，如xrun, vcs, verdi, simvision, vivado, synplify等
+\end{itemize}
+
+\datedsubsection{\textbf{芯片设计开发验证系统搭建}}{2020.7-2021.12}
+\begin{itemize}
+  \item 制定芯片设计开发验证流程，基于Python脚本实现芯片验证平台环境搭建和回归测试系统
+  \item 开发芯片IP代码管理系统，实现芯片IP代码的版本管理和变更跟踪
+  \item 了解芯片开发和设计全流程，协助芯片设计团队进行芯片架构设计和模块设计
+\end{itemize}
+
+\datedsubsection{\textbf{芯片设计开发与验证}}{2020.7-至今}
+\begin{itemize}
+  \item 参与芯片RoadMap指定，芯片需求分析，芯片架构设计，芯片模块设计和验证
+  \item 负责芯片FPGA验证及硅后验证工作，确保芯片功能和性能符合设计要求
+   \begin{itemize}
+    \item 负责项目包含YTM321B1Lx, YTM32B1Mx, YTM32B1Hx等MCU芯片的设计开发和验证工作
+    \item 为芯片规格参数提供数据支持，对测试结果进行分析和问题定位。
+    \item 对芯片应用和芯片设计、芯片测试等有深入了解，能够从多个角度对芯片开发过程提出改善建议
+   \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{芯片设计开发与验证}}{2021-至今}
+\begin{itemize}
+    \item 负责芯片失效的技术分析，了解芯片各种失效模式
+    \item 熟悉硬件电路设计和软件设计，能够根据失效模式提出针对性的改善意见
+    \item 针对芯片物理分析给出合理的分析计划，并对结果进行分析与确认
 \end{itemize}
 
 % \section{\faGraduationCap\ 教育背景}
@@ -77,12 +116,22 @@
 \section{技术能力}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.2ex]
-  \item \textbf{编程语言}: Python, Verilog, C, Shell, LabVIEW， tcl
+  \item MCU / SoC 系统软件架构设计，熟悉 ARM Cortex-M 内核与调试
+  \item 外设与驱动：FlexCAN / LIN / ENET / SENT / SAI / UART / SPI / I2C / GPIO / ADC / PWM 
+  \item FPGA 原型验证与芯片硅前 / 硅后验证流程
+  \item 自动化测试与工具链：Python / LabVIEW / CI / 回归测试
+  \item EDA 工具：Vivado / Synopsys VCS / Verdi / SimVision / Xrun
+  \item 软件流程与质量体系：版本管理、缺陷管理、代码评审
+  \item AUTOSAR / MCAL 开发与验证经验
+  \item 技术团队管理与跨部门协作
 \end{itemize}
 
 \section{个人总结}
-有较好的组织能力，学习上善于掌握各种新技术，学习能力强, 在\textbf{恩智浦半导体}担任芯片测试工程师和芯片原型验证开发工程师，担任多个项目负责人，负责开发基于\textbf{Python}和\textbf{LabVIEW}的自动化测试系统。
+具备 10 年以上 MCU/SoC 芯片研发与系统软件经验，技术背景覆盖 FPGA 原型验证、芯片硅前/硅后验证、系统软件架构与自动化测试。
 
+曾任职于恩智浦半导体，负责多款 MCU 芯片验证与原型开发；现任江苏云途半导体系统软件总监，主导 MCU 系统软件架构设计与团队建设，深度参与芯片产品定义、设计与验证。
+
+兼具技术深度与管理经验，能够从芯片架构、软件系统、验证流程多个层面推动产品成功交付.
 %% Reference
 %\newpage
 %\bibliographystyle{IEEETran}
