@@ -38,8 +38,8 @@
 \RequirePackage{enumitem}
 \setlist{noitemsep} % removes spacing from items but leaves space around the whole list
 %\setlist{nosep} % removes all vertical spacing within and around the list
-\setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
-\setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
+\setlist[itemize]{topsep=0.7em, leftmargin=1.5pc}
+\setlist[enumerate]{topsep=0.7em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
 \titleformat{\section}         % Customise the \section command 
@@ -48,13 +48,13 @@
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
   [\titlerule]                 % Inserts a horizontal line after the heading
-\titlespacing*{\section}{0cm}{*1}{*1}
+\titlespacing*{\section}{0cm}{*2}{*2}
 
 \titleformat{\subsection}
   {\large\raggedright}
   {}{0em}
   {}
-\titlespacing*{\subsection}{0cm}{*1}{*0.5}
+\titlespacing*{\subsection}{0cm}{*1.5}{*1}
 
 \newcommand{\datedsection}[2]{%
   \section[#1]{#1 \hfill #2}%
